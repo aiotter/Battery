@@ -1,5 +1,7 @@
 # Just another [Battery](https://github.com/Goles/Battery) for [nerds](https://github.com/ryanoasis/nerd-fonts)
 
+![image](https://raw.githubusercontent.com/aiotter/nerdBattery/img/img.png)
+
 Use [battery emojis](https://www.nerdfonts.com/cheat-sheet?set=nf-fa-battery) instead of [spark](https://github.com/holman/spark).
 
 ### Features
