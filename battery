@@ -136,14 +136,15 @@ apply_colors() {
 # Print the battery status
 print_status() {
     if ((emoji)) && ((BATT_CONNECTED)); then
-        GRAPH="⚡"
+        GRAPH=""
     else
-        if command -v spark &>/dev/null; then
-            sparks=$(spark 0 ${BATT_PCT} 100)
-            GRAPH=${sparks:1:1}
-        else
-            ascii=1
-        fi
+      case $((BATT_PCT/25)) in
+        0 ) GRAPH="";;
+        1 ) GRAPH="";;
+        2 ) GRAPH="";;
+        3 ) GRAPH="";;
+        4 ) GRAPH="";;
+      esac
     fi
 
     if ((ascii)); then
